@@ -79,8 +79,8 @@ const App: React.FC = () => {
 
   const [products, setProducts] = useState<Product[]>(() =>
     loadLS<Product[]>(LS_PRODUCTS, [
-      { id: uuid(), name: "Telefon", qty: 10, price: 200, category: "Xitoy" },
-      { id: uuid(), name: "Non", qty: 20, price: 10, category: "O'zbekiston" },
+      { id: uuid(), name: "", qty: 0, price: 0, category: "Xitoy" },
+      { id: uuid(), name: "", qty: 0, price: 0, category: "O'zbekiston" },
     ])
   );
 
